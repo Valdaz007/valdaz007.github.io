@@ -1,3 +1,19 @@
 .container {
   background-color: #01B6B6;
 }
+
+header {
+  background-color: #1A1A1A;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none; 
+}
