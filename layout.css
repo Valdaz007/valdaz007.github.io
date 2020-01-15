@@ -1,28 +1,28 @@
 * {
-  padding: 0px;
-  margin: 0px;
+  	padding: 0px;
+  	margin: 0px;
 }
 
 .container {
-  background-color: #01B6B6;
+  	background-color: #01B6B6;
 }
 
 h1 {
-  margin: 20px 0px 0px 10px;
+  	margin: 20px 0px 0px 10px;
 	text-align: left;
 	color: #0B6969;
 }
 
 .row {
-  background-color: #1A1A1A;
+  	background-color: #1A1A1A;
 }
 
 nav ul {
-  list-style-type: none;
+  	list-style-type: none;
 }
 
 nav ul li {
-  display: inline;
+  	display: inline;
 }
 
 nav ul li a {
@@ -34,5 +34,9 @@ nav ul li a {
 footer {
 	background-color: #1A1A1A;
 	text-align: center;
+}
+
+footer p {
 	color: "white";
+	
 }
