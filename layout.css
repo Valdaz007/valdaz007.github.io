@@ -7,6 +7,12 @@
   background-color: #01B6B6;
 }
 
+h1 {
+  margin: 20px 0px 0px 10px;
+	text-align: left;
+	color: #0B6969;
+}
+
 .row {
   background-color: #1A1A1A;
 }
@@ -20,5 +26,11 @@ nav ul li {
 }
 
 nav ul li a {
-  text-decoration: none; 
+	margin-right: 25px;
+	text-decoration: none;
+	color: #0B6969;
+}
+
+footer {
+	background-color: #1A1A1A;
 }
