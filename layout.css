@@ -68,7 +68,7 @@ main {
 
 	display: grid;
 	grid-template-columns: 900px;
-	grid-template-rows: 75px 125px 100px;
+	grid-template-rows: 75px 150px 75px;
 }
 
 main h2 {
@@ -89,6 +89,15 @@ main p {
 	font-family: "perpetua";
 }
 
+main h3 {
+	grid-column: 1;
+	grid-row: 3;
+
+	width: 500px;
+	margin: 0px auto;
+	font-family: "perpetua";
+}
+
 span {
 	font-size: 130%;
 }
@@ -105,4 +114,5 @@ footer {
 
 footer p {
 	color: white;
+	transform: translateY(70px);
 }
