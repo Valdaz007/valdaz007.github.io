@@ -5,12 +5,12 @@ header {
 h1 {
 	color: #0B6969;
 	font-family: "myriad pro";
+	font-size: 4em;
 }
 
 nav ul {
-	text-align: left;
-	
-	transform: translateY(32px);
+	text-align: right;
+	transform: translateY(44px);
 }
 
 nav ul li {
@@ -19,35 +19,83 @@ nav ul li {
 }
 
 nav ul li a {
-	margin-left: 20px;
+	margin-right: 20px;
 	color: #0B6969;
 	font-family: "myriad pro";
-	font-size: 1.25em;
+	font-size: 1.5em;
 	font-weight: "thick";
 }
-
-@media (max-width: 1200px){  /*Medium*/
-	header {
-		background-color: lightblue;
-	}
+	
+/* MAIN **************************************************************/
+main section p {
+	font-size: 110%;
 }
 
-@media (max-width: 992px){  /*Small*/
-	header {
-		background-color: darkblue;
-	}
-	
-	h1 {
-		font-size: ;
-	}
+/* LINKS *************************************************************/
+.links {
+	margin: 50px 0px 30px 0px;
+	text-align: center;
 }
 
-@media (max-width: 758px){  /*Extra Small*/
-	header {
-		background-color: darkgreen;
+/* NOTICE ***********************************************************/
+.notice {
+	background-color: lightyellow;
+	margin-bottom: 10px;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+/* FOOTER ***********************************************************/
+footer {
+	background-color: #1A1A1A;
+	color: white;
+	height: 75px;
+	text-align: center;
+}
+
+footer p {
+	transform: translateY(20px);
+}
+
+main section a img {
+	width: 75px;
+	text-align: center;
+	border-radius: 50px;
+	transition: 1s ease;
+}
+
+main section a img:hover {
+	transform: rotateZ(360deg);
+}
+
+@media (max-width: 990px){  /*Small*/
+	h1 {
+		text-align: center;
+		font-size: 5em;
 	}
 	
-	h1 {
-		font-size:
+	nav {
+		background-color: orange;
+		height: 50px;
+	}
+
+	nav ul {
+		margin: 0px 0px 0px 0px;
+		text-align: center;
+		transform: translateY(10px);
+		background-color: orange;
+	}
+
+	nav ul li {
+		display: inline;
+		width: 75px;
+	}
+
+	nav ul li a {
+		margin: 0px 10px 0px 10px;
+		color: #0B6969;
+		font-family: "myriad pro";
+		font-size: 1.5em;
+		font-weight: "thick";
 	}
 }
