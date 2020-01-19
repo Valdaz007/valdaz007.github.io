@@ -31,6 +31,14 @@ main section p {
 	font-size: 110%;
 }
 
+.bg-main {
+	background-color: #01B6B6;
+}
+
+.pad-main {
+	padding: 0px 25px 0px 25px;
+}
+
 /* LINKS *************************************************************/
 .links {
 	margin: 50px 0px 30px 0px;
@@ -39,7 +47,6 @@ main section p {
 
 /* NOTICE ***********************************************************/
 .notice {
-	background-color: lightyellow;
 	margin-bottom: 10px;
 	padding: 5px;
 	border-radius: 10px;
