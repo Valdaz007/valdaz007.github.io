@@ -1,29 +1,38 @@
+* {
+	color: black;
+}
+
 header {
 	background-color: #1A1A1A;
+	height: 150px;
 }
 
 h1 {
-	color: #0B6969;
+	color:#0B6969;
 	font-family: "myriad pro";
-	font-size: 4em;
+	font-size: 5em;
+	transform: translateY(24px);
 }
 
 nav ul {
 	text-align: right;
-	transform: translateY(44px);
+	transform: translateY(-27px);
 }
 
 nav ul li {
 	display: inline;
-	width: 75px;
 }
 
 nav ul li a {
-	margin-right: 20px;
-	color: #0B6969;
+	margin: 0px 0px 0px 15px;
 	font-family: "myriad pro";
 	font-size: 1.5em;
 	font-weight: "thick";
+}
+
+nav ul li a strong {
+	color: #0B6969;
+	text-align: center;
 }
 	
 /* MAIN **************************************************************/
@@ -32,7 +41,7 @@ main section p {
 }
 
 .bg-main {
-	background-color: #01B6B6;
+	background-color: #3FA9F5 /*#01B6B6*/;
 }
 
 .pad-main {
@@ -55,12 +64,12 @@ main section p {
 /* FOOTER ***********************************************************/
 footer {
 	background-color: #1A1A1A;
-	color: white;
 	height: 75px;
 	text-align: center;
 }
 
 footer p {
+	color: white;
 	transform: translateY(20px);
 }
 
@@ -79,30 +88,70 @@ main section a img:hover {
 	h1 {
 		text-align: center;
 		font-size: 5em;
+		transform: translateY(0px);
 	}
 	
 	nav {
-		background-color: orange;
+		text-align: center;
 		height: 50px;
 	}
 
 	nav ul {
-		margin: 0px 0px 0px 0px;
 		text-align: center;
-		transform: translateY(10px);
-		background-color: orange;
+		margin: 0px;
+		padding: 0px;
+		transform: translateY(0px);
 	}
 
 	nav ul li {
 		display: inline;
-		width: 75px;
 	}
 
 	nav ul li a {
 		margin: 0px 10px 0px 10px;
-		color: #0B6969;
 		font-family: "myriad pro";
 		font-size: 1.5em;
 		font-weight: "thick";
 	}
+}
+
+
+/* Text Align */
+.cont-center {
+	text-align: center;
+}
+
+.cont-right {
+	text-align: right;
+}
+
+.cont-left {
+	text-align: left;
+}
+
+/* Background Color */
+.bg-notice {
+	background-color: #FFE9D2;
+}
+.bg-black {
+	background-color: #1A1A1A;
+}
+
+.bg-white {
+	background-color: whitesmoke;
+}
+
+/* Color */
+.font-black {
+	color: black;
+}
+.font-black {
+	color: #1A1A1A;
+}
+.font-greenishblue {
+	color: #0B6969;
+}
+
+.font-blue {
+	color: blue;
 }
