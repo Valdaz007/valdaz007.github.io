@@ -37,6 +37,7 @@ main section h2{
 }
 
 main section p {
+	text-align: justify;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: 120%;
 }
