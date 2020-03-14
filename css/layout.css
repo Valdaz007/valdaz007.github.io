@@ -130,6 +130,10 @@ main section a img:hover {
 	text-align: left;
 }
 
+.cont-just {
+	text-align: justify;	
+}
+
 /* Background Color */
 .bg-black {
 	background-color: #1A1A1A;
