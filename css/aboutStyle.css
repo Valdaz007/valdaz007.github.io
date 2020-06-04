@@ -1,0 +1,23 @@
+h5 {
+    text-align: center;
+}
+
+.brief-info {
+    width: 550px;
+    margin: 0px auto;
+    text-align: justify;
+}
+
+.imgMe {
+    float: left;
+    margin: 0px 10px 0px 0px;
+    border-radius: 3px;
+}
+
+/* MEDIA QUERIES    *************************************************************************/
+@media (max-width: 768px) {
+    .brief-info {
+        width: auto;
+        margin: 0px 10px 0px 10px;
+    }
+}
