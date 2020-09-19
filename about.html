@@ -6,34 +6,52 @@
         <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel = "stylesheet" href = "css/themeStyle.css">
-        <link rel = "stylesheet" href = "css/aboutStyle.css">
-        <title>Valdaz Media - ABOUT</title>
+        <link rel = "stylesheet" href = "css/indexStyle.css">
+        <title>Valdaz Media - HOME</title>
     </head>
     <body>
+        <div class = "body">
         <div class = "main">
             <main class = "container">
                 <div class = "row">
                     <div class = "col-sm-12">
-                        <h2>Victor Volsavai AKA Valdaz</h2>
+                        <h2>Welcome to Valdaz Media GitHub Web Page</h2>
                         <div class = "col-sm-12 hrOrange"></div>
-                        <h5>Hi, I'm Victor Volsavai and I am a Developer - Designer</h5>
+                        <h5>Showcasing the Skills and Development of <span class = "text-info">Victor Volsavai</span></h5>
                         <hr>
                         <p class = "brief-info">
-                            <img class = "imgMe" src = "image/pic01.jpg"/>
-                            I am an Aspiring Developer and an Amature Designing, 
-                            all Backed Up by a 110% Maximum Effort Charisma!<br>
-                            I love Coding. I can't Express that enough. The Fact that I
-                            am Good at Programming <span class = "text-info">(Writing Code)</span> 
-                            and that an individual can create Programs that serves as a Model to Real Life Objects 
-                            and Processes makes me want to do this for the rest of my life.
+                            <img class = "imgMe" src = "img/ValdazMediaGiff01.gif"/> This is a Website created by me <span class = "text-info">(Victor Valsavai aka Valdaz)</span> 
+                            using the GitHub Web Pages to serve as a Web Portfolio<br>
+                            <span class = "text-info">Valdaz Media</span> is my very own Personal Branding, where I stage some
+                            of my skills and very much anything else that I like. These includes
+                            Programming <span class = "text-warning">(Websites, Applications)</span>, 
+                            Designing <span class = "text-warning">(Websites, Logos)</span> and
+                            also including my <span class = "text-info">Cooking Skills</span> as well.
                             <br><br>
-                            I have just finished from the University of Papua New Guinea.
-                            Where I Majored in Physics <span class = "text-info">(Electronics Strand)</span>. 
-                            I also took Courses in Mathematics, Statistics and Computer Science as
-                            Part of Required Courses in Physics - Electronics Strand.<br>
-                            I wish to be Full-Time Developer, Developing Programs and 
-                            Applications that will Help a lot in Nation Building.
+                            The Website will also include my Development Progress and What I'm currently Learning
+                            or Interested in.
+                            <br><br>
+                            This website is a <span class = "text-info">Static Website</span>, meaning every thing is going to be updated
+                            manually. The website was created using <span class = "text-info">HTML</span>, 
+                            <span class = "text-info">CSS</span>, <span class = "text-info">Bootstrap</span>
+                            and a few lines of <span class = "text-info">JavaScript</span> (if included).
                         </p>
+                    </div>
+                </div>
+                <br>
+                <div class = "row">
+                    <div class = "col-sm-12">
+                        <div class = "row socials">
+                            <div class = "col-sm-4 links">
+                                <a href = "fb.com"><img title = "Facebook" class = "link" src = "img/fb.jpg"></a>
+                            </div>
+                            <div class = "col-sm-4 links">
+                                <a href = "instagram.com"><img title = "Instagram" class = "link" src = "img/insta.jpg"></a>
+                            </div>
+                            <div class = "col-sm-4 links">
+                                <a href = "linkedin.com"><img title = "Linked In" class = "link" src = "img/in.jpg"></a>
+                            </div>
+                        </div>
                         <div class = "col-sm-12 hrOrange"></div>
                     </div>
                 </div>
@@ -53,6 +71,7 @@
                 </div>
             </footer>
         </div>
+        </div>
         <header class = "container-fluid">
             <div class = "row">
                 <div class = "col-sm-12">
@@ -60,12 +79,12 @@
                         <div class = "container">
                             <section class = "row">
                                 <h1 class = "col-sm-12 col-md-5 col-lg-4">Valdaz Media</h1>
-                                <nav class = "col-sm-12 col-md-6">
+                                <nav class = "col-sm-12 col-md-6 navSlider">
                                     <ul class = "row">
                                         <div class = "alink col-sm-1"></div>
-                                        <a class = "col-sm-3 col-md-3" href = "index.html"><li><strong>HOME</strong></li></a>
+                                        <a class = "col-sm-3 col-md-3" href = "index.html"><li class = "linkset"><strong>HOME</strong></li></a>
                                         <a class = "col-sm-3 col-md-3" href = "skills.html"><li><strong>SKILLS</strong></li></a>
-                                        <a class = "col-sm-3 col-md-3 linkset" href = "#"><li><strong>ABOUT</strong></li></a>
+                                        <a class = "col-sm-3 col-md-3" href = "about.html"><li><strong>ABOUT</strong></li></a>
                                     </ul>
                                 </nav>
                             </section>
@@ -74,5 +93,11 @@
                 </div>
             </div>
         </header>
+        <button class = "btnNavSlide bg-info" type = "button">
+            <div class = "bar"></div><div class = "bar"></div><div class = "bar"></div>
+        </button>
+        <script src= "https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src = "js/myJs.js"></script>
     </body>
 </html>
