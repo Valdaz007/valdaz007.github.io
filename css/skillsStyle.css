@@ -21,6 +21,7 @@ h5 {
 
 .skillset ul li {
     margin-left: 40px;
+    margin-bottom: 3px;
     text-align: left;
     color: rgb(230, 230, 230);
     font-size: 15px;
@@ -29,7 +30,7 @@ h5 {
 .devset {
     background-color: chocolate;
     border: 5px solid #172536;
-    padding: 5px;
+    padding: 0px;
     text-align: center;
 }
 
@@ -45,6 +46,7 @@ h5 {
 
 .devinfo p {
     text-align: left;
-    padding: 7px;
     color: aliceblue;
+    padding: 0px;
+    font-size: 0.95em;
 }
