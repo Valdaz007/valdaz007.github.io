@@ -3,6 +3,13 @@ h5 {
     text-align: center;
 }
 
+.imgMe {
+    width: 210px;
+    float: left;
+    margin: 0px 10px 0px 0px;
+    border-radius: 3px;
+}
+
 .brief-info {
     width: 550px;
     margin: 0px auto;
