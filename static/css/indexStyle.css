@@ -5,10 +5,10 @@
 
 .hero {
     background-color: rgb(17, 16, 13);
-    background-image: url(./img/bg-hero-section.jpg);
+    background-image: url(../image/bg-hero-section.jpg);
     background-size: cover;
-    background-position: top;
-    height: clamp(200px, 50vw, 300px);
+    background-position: bottom;
+    height: clamp(220px, 50vw, 300px);
     
     display: flex;
     align-items: center;
@@ -28,6 +28,7 @@
     
     /* Element Position */
     position: absolute;
+    left: -20px;
     bottom: 0;
     z-index: 10;
 }
@@ -57,11 +58,13 @@
 
 .hero-card p {
     margin-bottom: 12px;
+
+    font-size: clamp(.7rem, 2vw, 1rem);
 }
 
 .hero-card #miname {
     color: orange;
-    font-size: 4vw;
+    font-size: clamp(.8rem, 4vw, 1.8rem);
     font-weight: 700;
 }
 
@@ -85,6 +88,7 @@
     background-color: orange;
     color: white
 }
+/* HERO END */
 
 
 h5 {
@@ -130,6 +134,13 @@ h5 {
 /* MAIN ENDS HERE   *************************************************************************/
 
 /* MEDIA QUERIES    *************************************************************************/
+@media(min-width: 426px) {
+    .hero-wrapper img {
+        left: 0px;
+    }
+}
+
+
 @media (max-width: 768px) {
     .brief-info {
         width: auto;
