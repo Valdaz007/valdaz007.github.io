@@ -110,29 +110,28 @@ header {
 }
 /* HEADER ENDS HERE *************************************************************************/
 
-/* MAIN             *************************************************************************/
+/* MAIN *************************************************************************************/
 
 main {
+    width: clamp(250px, 95%, 800px);
+    margin: 0 auto;
     margin-top: 1rem;
     color: #c1c1c1;
 }
 
-main h2 {
+main .sub_Header {
     text-align: center;
     color: rgba(233, 222, 122, 0.801);
+    font-size: clamp(1.2rem, 3vw, 2rem);
 }
 
-.hrOrange {
-    height: 15px;
-    background-color: rgba(255, 68, 0, 0.753);
-    margin-bottom: 20px;
-    margin-top: 20px;
-    border-radius: 3px;
+main .sub_Text {
+    margin-top: 10px;
+    font-size: clamp(1rem, 2vw, 1.4rem);
 }
-/* MAIN ENDS HERE   *************************************************************************/
+/*** MAIN ENDS HERE   *************************************************************************/
 
 
-/* MAIN ENDS HERE   *************************************************************************/
 .bar {
     background-color: #c5c6c7;
     height: 2px;
@@ -143,6 +142,7 @@ main h2 {
 /* FOOTER           *************************************************************************/
 footer {
     height: 100px;
+    margin-top: 20px;
     background-color: #0b0c10;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;

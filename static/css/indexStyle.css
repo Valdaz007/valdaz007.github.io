@@ -13,6 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .hero-wrapper {
@@ -46,7 +47,7 @@
 
     /* Element Position */
     position: absolute;
-    right: 0;
+    right:10px;
     top: 10%;
     z-index: 20;
 
@@ -91,21 +92,29 @@
 /* HERO END */
 
 
+/***  MAIN SECTION *****************************************************************************************/
 h5 {
     text-align: center;
 }
 
-.imgMe {
-    width: 210px;
-    float: left;
-    margin: 0px 10px 0px 0px;
+.br-info-img {
+    width: 100%;
+    height: 250px;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
     border-radius: 3px;
 }
 
+.brief-info figcaption {
+    font-size: .8rem;
+}
+
 .brief-info {
-    width: 550px;
     margin: 0px auto;
-    text-align: justify;
+}
+
+.br-info-text {
+    margin-top: 10px;
 }
 
 .socials {
