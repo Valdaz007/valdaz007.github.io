@@ -1,4 +1,92 @@
 /* MAIN             *************************************************************************/
+
+
+/*** HERO SECTION  ***/
+
+.hero {
+    background-color: rgb(17, 16, 13);
+    background-image: url(./img/bg-hero-section.jpg);
+    background-size: cover;
+    background-position: top;
+    height: clamp(200px, 50vw, 300px);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-wrapper {
+    height: inherit;
+    width: clamp(320px, 80%, 1000px);
+    padding: 0;
+    position: relative;
+}
+
+.hero-wrapper img {
+    height: clamp(200px, 50vw, 300px);
+    
+    
+    /* Element Position */
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+}
+
+.hero-card {
+
+    /* Style */
+    background-color: #0B0C10;
+    opacity: .8;
+    min-height: 120px;
+    width: 50%;
+    box-shadow: 3px 3px 3px 1px black;
+
+    padding: 10px;
+
+    /* Element Position */
+    position: absolute;
+    right: 0;
+    top: 10%;
+    z-index: 20;
+
+    /* Text */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: .8rem;
+}
+
+.hero-card p {
+    margin-bottom: 12px;
+}
+
+.hero-card #miname {
+    color: orange;
+    font-size: 4vw;
+    font-weight: 700;
+}
+
+.hero-card a {
+    /* Style */
+    box-sizing: border-box;
+    background-color: orange;
+    padding: 2px;
+    border-radius: 3px;
+
+    /* Text */
+    color:#0B0C10;
+    font-size: .8rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: 500ms;
+}
+
+.hero-card a:hover {
+    background-color: orange;
+    color: white
+}
+
+
 h5 {
     text-align: center;
 }
