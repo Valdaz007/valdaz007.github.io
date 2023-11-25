@@ -1,6 +1,6 @@
-h2 {
-    text-align: left;
-    margin: 0px 10px 0px 5px;
+main .sub_Header {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 h5 {
@@ -10,9 +10,15 @@ h5 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
 .skillset {
     background-color:rgba(198, 122, 233, 0.295);
-    border: 5px solid #172536;
+    border: 5px solid transparent;
 }
 
 .skillset ul {
@@ -29,7 +35,6 @@ h5 {
 
 .devset {
     background-color: chocolate;
-    border: 5px solid #172536;
     padding: 0px;
     text-align: center;
 }
@@ -49,4 +54,36 @@ h5 {
     color: aliceblue;
     padding: 0px;
     font-size: 0.95em;
+}
+
+/*** MEDIA QUERIES *********************************************************/
+
+@media(min-width: 426px) {
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skillset:nth-child(3) {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .devset {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media(min-width: 769px) {
+    .skills {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .devset {
+        grid-row-start: 1;
+        grid-column-start: 3;
+    }
 }
