@@ -3,21 +3,34 @@ h5 {
 }
 
 .brief-info {
-    width: 550px;
-    margin: 0px auto;
-    text-align: justify;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-.imgMe {
-    float: left;
-    margin: 0px 10px 0px 0px;
-    border-radius: 3px;
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.imgCenter img {
+    height: 100%;
 }
 
 /* MEDIA QUERIES    *************************************************************************/
-@media (max-width: 768px) {
+@media (min-width: 426px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 768px) {
     .brief-info {
         width: auto;
         margin: 0px 10px 0px 10px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
