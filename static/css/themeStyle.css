@@ -170,7 +170,7 @@ footer ul li {
 /* MEDIA QUERIES    *************************************************************************/
 @media (min-width: 426px) {
     .header-wrapper {
-        width: clamp(425px, 80%, 1000px);
+        width: clamp(425px, 80%, 800px);
     }
 }
 
