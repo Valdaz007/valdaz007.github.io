@@ -126,6 +126,7 @@ main .sub_Header {
 }
 
 main .sub_Text {
+    text-align: center;
     margin-top: 10px;
     font-size: clamp(1rem, 2vw, 1.4rem);
 }
