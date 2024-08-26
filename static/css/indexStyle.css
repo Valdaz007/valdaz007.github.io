@@ -73,12 +73,12 @@
     /* Style */
     box-sizing: border-box;
     background-color: orange;
-    padding: 2px;
+    padding: 5px;
     border-radius: 3px;
 
     /* Text */
     color:#0B0C10;
-    font-size: .8rem;
+    font-size: .7rem;
     font-weight: 700;
     text-decoration: none;
 
