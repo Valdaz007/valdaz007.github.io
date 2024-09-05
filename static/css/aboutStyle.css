@@ -3,8 +3,16 @@ h5 {
 }
 
 .brief-info {
-    display: grid;
-    grid-template-columns: 1fr;
+    /* display: flex;
+    flex-wrap:nowrap; */
+    /* grid-template-columns: 1fr 1fr; */
+    /* gap: 10px; */
+}
+
+.imgMe {
+    float: left;
+    border-radius: 10px;
+    margin-right: 25px;
 }
 
 .gallery {
