@@ -63,7 +63,7 @@
 
     #skills-bgHero {
         position: absolute;
-        object-position: top;
+        object-position: bottom;
         object-fit: cover;
         top: 0;
         left: 0;
