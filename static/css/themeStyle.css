@@ -48,7 +48,7 @@ header {
     color: white;
 
     display: flex;
-    gap: .5rem;
+    gap: 1rem;
 }
 
 .primary-nav li a {
@@ -105,7 +105,6 @@ header {
         inset: 0 0 0 50%;
     }
 }
-
 
 .linkset {
     background-color: rgba(255, 68, 0, 0.753);

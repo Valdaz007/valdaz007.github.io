@@ -73,6 +73,7 @@
         width: 100%;
         aspect-ratio: 1/1;
         background-color: aliceblue;
+        box-shadow: 0 0 3px black inset;
         z-index: -1;
 
         border-radius: 100vw 100vw;
