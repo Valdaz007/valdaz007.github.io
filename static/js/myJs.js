@@ -10,11 +10,7 @@ $(document).ready(function(){
         }
     });
 
-    $(".panels").accordion(
-        {active: 2}, 
-        {collapsible: true},
-        {heightStyle: "content"}
-    );
+    $('#foot').load('./static/temps/temp_footer.html');
 });
 
 function navSlide($winWidth) {
