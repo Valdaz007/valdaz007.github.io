@@ -16,11 +16,9 @@
 }
 
 .hero-wrapper {
-    /* border: 1px solid red; */
     height: inherit;
     width: 95%;
     padding: 0px;
-
 
     display: flex;
     justify-content: space-between;
@@ -32,7 +30,7 @@
 #hero-img-wrap {
     height: 100%;
     width: 40%;
-    /* border: 1px solid blue; */
+    
     display: flex;
     align-items: center;
     justify-content: center;
