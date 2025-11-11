@@ -1,25 +1,24 @@
 .hero {
     height: clamp(220px, 50vw, 300px);
-    /* border: 1px solid red; */
     position: relative;
-    z-index: 5;
+    z-index: -1;
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
 
     align-items: center;
     justify-content: center;
 
-    &::after {
+    &::before {
         content: '';
         position: absolute;
         height: 100%;
         width: 100%;
         top: 0;
 
-        background-color: rgba(0, 0, 0, 0.82);
+        background-color: rgba(0, 0, 0, 0.25);
         opacity: .55;
-        z-index: 3;
+        z-index: 1;
     }
     
     & img {
@@ -30,9 +29,84 @@
         z-index: -1;
     }
 
-    h2, h5 {
+    .contentText {
+        /* h2, h5 {
+            z-index: 10;
+        } */
+        padding: 1rem;
+        margin: 1rem;
+        background-color: #33333361;
+        border-radius: 1rem;
         z-index: 10;
+    }   
+}
+
+:root {
+    --diceWidth: 100px;
+}
+
+.diceWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .dice {
+        transform-style: preserve-3d;
+        
+        aspect-ratio: 1/1;
+        width: var(--diceWidth);
+
+        position: relative;
+
+        transform: rotate3d(1, 1, 0, 60deg);
+
+        animation: diceRotate 10s ease-in-out infinite;
     }
+
+    .side {
+        aspect-ratio: 1/1;
+        width: var(--diceWidth);
+
+        position: absolute;
+    }
+
+    .front {
+        background-color: darkblue;
+        transform: translateZ(calc(var(--diceWidth)/2));
+    }
+
+    .back {
+        background-color: darkgoldenrod;
+        transform: translateZ(calc(var(--diceWidth)/-2));
+    }
+
+    .right {
+        background-color: darkorange;
+        transform: translateX(calc(var(--diceWidth)/2)) rotateY(90deg);
+    }
+
+    .left {
+        background-color: darkgreen;
+        transform: translateX(calc(var(--diceWidth)/-2)) rotateY(-90deg);
+    }
+
+    .top {
+        background-color: darkcyan;
+        transform: translateY(calc(var(--diceWidth)/2)) rotateX(90deg);
+    }
+
+    .bottom {
+        background-color: darkred;
+        transform: translateY(calc(var(--diceWidth)/-2)) rotateX(-90deg);
+    }
+}
+
+@keyframes diceRotate {
+    25% { transform: rotate3d(1,1,0,320deg); }
+    50% { transform: rotate3d(0,1,1,60deg); }
+    75% { transform: rotate3d(1,0,1,320deg); }
+    100% { transform: rotate3d(1,1,0,60deg); }
 }
 
 h5 {
@@ -77,6 +151,11 @@ h5 {
 @media (min-width: 768px) {
     .brief-info {
         width: auto;
-        margin: 0px 10px 0px 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .brief-info {
+        margin-top: 2rem;
     }
 }
