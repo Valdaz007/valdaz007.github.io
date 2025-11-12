@@ -3,12 +3,6 @@
     position: relative;
     z-index: -1;
 
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-
-    align-items: center;
-    justify-content: center;
-
     &::before {
         content: '';
         position: absolute;
@@ -29,16 +23,14 @@
         z-index: -1;
     }
 
-    .contentText {
-        /* h2, h5 {
-            z-index: 10;
-        } */
-        padding: 1rem;
-        margin: 1rem;
-        background-color: #33333361;
-        border-radius: 1rem;
-        z-index: 10;
-    }   
+    .heroWrap {
+        width: 45%;
+        margin: 0 auto;
+        height: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
 }
 
 :root {
@@ -48,7 +40,7 @@
 .diceWrap {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
 
     .dice {
@@ -99,6 +91,20 @@
     .bottom {
         background-color: darkred;
         transform: translateY(calc(var(--diceWidth)/-2)) rotateX(-90deg);
+    }
+}
+
+.heroWrap .contentText {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    .contentTextWrap {
+        width: 100%;
+        padding: 1rem;
+        background-color: #33333361;
+        border-radius: 1rem;
+        z-index: 10;
     }
 }
 
