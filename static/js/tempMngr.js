@@ -44,7 +44,7 @@ class TempFooter extends HTMLElement {
                         <h6>SOCIALS</h6>
                         <div class = "socials">
                             <div class="link">
-                                <a href="https://www.facebook.com/profile.php?id=100008955696431">
+                                <a href="https://www.facebook.com/victorvolsavai/">
                                     <img title="Facebook" class="link-img" src="./static/image/facebook.png">
                                 </a>
                             </div>
