@@ -1,3 +1,31 @@
+
+
+class TempHeader extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+            <header>
+                <div class="header-wrapper">
+                    <h1>VALDAZ007</h1>
+        
+                    <!-- Navigation Toggle Button -->
+                    <button class="btnNav-toggle" aria-controls="primary-nav" aria-expanded="false">
+                        <span></span>
+                    </button>
+        
+                    <!-- Navigation Menu -->
+                    <nav>
+                        <ul id="primary-nav" data-visible="false" class="primary-nav">
+                            <li><a href="./index.html">HOME</a></li>
+                            <li><a href="./skills.html">PORTFOLIO</a></li>
+                            <li><a href="./about.html">ABOUT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        `
+    }
+}
+
 class TempFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
@@ -42,4 +70,5 @@ class TempFooter extends HTMLElement {
     }
 }
 
+customElements.define('temp-header', TempHeader)
 customElements.define('temp-footer', TempFooter)
