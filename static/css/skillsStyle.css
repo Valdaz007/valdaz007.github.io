@@ -157,3 +157,9 @@ h5 {
         grid-column-start: 3;
     }
 }
+
+@media(min-width: 1024px){
+    .hero {
+        height: 50vh;
+    }
+}

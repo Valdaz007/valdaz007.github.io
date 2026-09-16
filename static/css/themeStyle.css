@@ -2,19 +2,15 @@
     padding: 0; margin: 0; box-sizing: border-box;
 }
 
-body {
-    background-color: #241200;
-}
-
 /* HEADER           *************************************************************************/
 header {
-    background-color: darkcyan;
+    background-color: #171e25;
     height: 75px;
 
     display: flex;
     align-items: center;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, "Rubik";
 }
 
 .header-wrapper {
@@ -117,13 +113,18 @@ main {
     width: clamp(250px, 95%, 800px);
     margin: 0 auto;
     margin-top: 1rem;
-    color: #c1c1c1;
+    color: #1c1c1c;
 }
 
-main .sub_Header {
-    text-align: center;
-    color: rgba(233, 222, 122, 0.801);
-    font-size: clamp(1.2rem, 3vw, 2rem);
+main .aboutme {
+    padding: 2rem 0;
+
+    .sub_Header {
+        font-family: "Rubik";
+        text-align: left;
+        color: dodgerblue;
+        font-size: clamp(1.2rem, 3vw, 2rem);
+    }
 }
 
 main .sub_Text {
@@ -151,13 +152,13 @@ footer {
 }
 
 .footer-wrap {
-    max-width: 800px;
+    max-width: 80%;
     width: 95%;
     margin: 0 auto;
 
     display: flex;
     gap: 10px;
-    align-items: start;
+    align-items: center;
 
     & h6 {
         color: goldenrod;
@@ -213,6 +214,16 @@ footer {
 @media (min-width: 426px) {
     .header-wrapper {
         width: clamp(425px, 80%, 800px);
+    }
+}
+
+@media(min-width: 1440px){
+    .header-wrapper {
+        width: 80%;
+    }
+
+    main .sub_Header {
+        font-size: 2.4rem;
     }
 }
 
