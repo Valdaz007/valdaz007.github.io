@@ -4,7 +4,9 @@
     <head>
         <meta charset = "utf-8">
         <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-        <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
         <link rel = "stylesheet" href = "./static/css/themeStyle.css">
         <link rel = "stylesheet" href = "./static/css/indexStyle.css">
         <title>ValdazMedia - HOME</title>
@@ -14,75 +16,82 @@
 
         <!-- HERO SECTION-->
         <section class="hero">
-            <div class="hero-wrapper">
-                <div id="hero-img-wrap">
-                    <div id="hero-img">
-                        <img src="./static/image/hero-img.avif" alt="">
-                    </div>
+            <div class="wrap">
+                <div id="hero-img">
+                    <img src="./static/image/hero-img.avif" alt="">
                 </div>
-                <div class="hero-card">
-                    <div class="hero-card-wrapper">
-                        <p>
-                            I'm <span id="miname">Victor Volsavai</span><br>
-                            A Website Developer, IT Technical Officer, 
-                            Cloud Products R&D, & 
-                            Network Infrastructure Officer
-                        </p>
-    
-                        <a href="#">CONTACT ME</a>
+                <div class="cont">
+                    <p>
+                        Hello, I'm
+                    </p>
+                    <h1>
+                        Victor <span style="color:dodgerblue">Volsavai</span>
+                    </h1>
+                    <h2>Core Network Support | IT Support | Website Developer</h2>
+                    <p>
+                        
+                        A Website Developer, IT Technical Officer, 
+                        Cloud Products R&D, & 
+                        Network Infrastructure Officer
+                    </p>
+
+                    <div class="heroBtns">
+                        <a id="btnProj" href="#">View My Projects</a>
+                        <a id="btnCV" href="#">Download CV</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- MAIN SECTION-->
-        <main class="">
-            <h2 class="sub_Header my-4">Welcome to Valdaz007 GitHub Web Page</h2>
-            
-            <h5 class="text-info">CORE SKILLS</h5>
-            <section class="skills my-3">
-                <div class="skills-wrapper mt-3">
-                    <a href="./skills.html" class="skill">
-                        <img src="./static/image/coreskills/webdev.png" alt="website developent icon">
-                        <h6>WEB DEV</h6>
-                    </a>
-                    <a href="./skills.html" class="skill">
-                        <img src="./static/image/coreskills/network.png" alt="website developent icon">
-                        <h6>NETWORK</h6>
-                    </a>
-                    <a href="./skills.html" class="skill">
-                        <img src="./static/image/coreskills/database.png" alt="website developent icon">
-                        <h6>DATABASE</h6>
-                    </a>
-                    <a href="./skills.html" class="skill">
-                        <img src="./static/image/coreskills/cloud.png" alt="website developent icon">
-                        <h6>CLOUD</h6>
-                    </a>
-                </div>
-            </section><br>
-            
-            <h5 class="text-info mb-3">BRIEF INFO</h5>
-            <section class="brief-info">
-                <p class="br-info-text">
-                    This is a Website created by me <span class="text-info">(Victor Valsavai aka Valdaz)</span> 
-                    using the GitHub Web Pages to serve as a Web Portfolio<br>
-                    <span class="text-info">Valdaz Media</span> is my very own Personal Branding, where I stage some
-                    of my skills and very much anything else that I like. These includes
-                    Programming <span class="text-warning">(Websites, Applications)</span>, 
-                    Designing <span class="text-warning">(Websites, Logos)</span> and
-                    also including my <span class="text-info">Cooking Skills</span> as well.
-                    <br><br>
-                    The Website will also include my Development Progress and What I'm currently Learning
-                    or Interested in.
-                    <br><br>
-                    This website is a <span class="text-info">Static Website</span>, meaning every thing is going to be updated
-                    manually. The website was created using <span class="text-info">HTML</span>, 
-                    <span class="text-info">CSS</span>, <span class="text-info">Bootstrap</span>
-                    and a few lines of <span class="text-info">JavaScript</span>.
-                </p>
-            </section>
-            <br>
+        <main>
+            <section class="aboutme">
+                <div class="wrap">
+                    <div class="head">
+                        <h2 class="sub_Header"><span style="color: rgb(0, 73, 116)">About</span> Me</h2>
+                        <hr class="h2Hr">
+                    </div>
+                    <section class="info">
+                        <p class="br-info-text">
+                            This is a Website created by me <span class="text-info">(Victor Valsavai aka Valdaz)</span> 
+                            using the GitHub Web Pages to serve as a Web Portfolio<br>
+                            <span class="text-info">Valdaz Media</span> is my very own Personal Branding, where I stage some
+                            of my skills and very much anything else that I like. These includes
+                            Programming <span class="text-warning">(Websites, Applications)</span>, 
+                            Designing <span class="text-warning">(Websites, Logos)</span> and
+                            also including my <span class="text-info">Cooking Skills</span> as well.
+                            <br><br>
+                            The Website will also include my Development Progress and What I'm currently Learning
+                            or Interested in.
+                            <br><br>
+                            This website is a <span class="text-info">Static Website</span>, meaning every thing is going to be updated
+                            manually. The website was created using <span class="text-info">HTML</span>, 
+                            <span class="text-info">CSS</span>, <span class="text-info">Bootstrap</span>
+                            and a few lines of <span class="text-info">JavaScript</span>.
+                        </p>
+                    </section>
+                    <div class="contact">
 
+                    </div>
+                </div>
+            </section>
+
+            <section class="skillme">
+                <div class="wrap">
+                    <div class="head">
+                        <h2>My <span>Skills</span></h2>
+                        <hr class="h2Hr">
+                    </div>
+
+                    <div class="skills">
+                        <div class="skill"></div>
+                        <div class="skill"></div>
+                        <div class="skill"></div>
+                        <div class="skill"></div>
+                        <div class="skill"></div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <!-- FOOTER SECTION -->
