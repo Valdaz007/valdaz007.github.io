@@ -1,11 +1,13 @@
+main {
+    width: 100%;
+}
+
 .hero {
     position: relative;
     height: clamp(220px, 50vw, 300px);
     margin-bottom: 2rem;
     
     z-index: 1;
-
-    /* border: 1px solid red; */
 
     &::after {
         content: '';
@@ -147,8 +149,10 @@ h5 {
     }
 }
 
-@media(min-width: 769px) {
+@media(min-width: 768px) {
     .skills {
+        width: 90%;
+        margin: 0 auto;
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -161,5 +165,14 @@ h5 {
 @media(min-width: 1024px){
     .hero {
         height: 50vh;
+    }
+
+    .skills {
+        width: 80%;
+        border: 1px solid red;
+
+        .skillset {
+            width: 80%;
+        }
     }
 }
