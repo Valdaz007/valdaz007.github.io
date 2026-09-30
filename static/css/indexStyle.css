@@ -2,17 +2,41 @@
 
 
 /*** HERO SECTION  ***/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 .hero {
-    background-color: rgb(17, 16, 13);
-    background-image: url(../image/bg-hero-section.jpg);
-    background-size: cover;
-    background-position: bottom;
+    background-color: rgb(49, 25, 0);
     height: clamp(220px, 50vw, 300px);
     
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 1;
+
+    #indxherobg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}
+
+.aboutme {
+    padding: 2rem 0;
+
+    .sub_Header {
+        font-family: "Rubik";
+        text-align: left;
+        color: dodgerblue;
+        font-size: clamp(1.2rem, 3vw, 2rem);
+    }
 }
 
 @media(min-width: 1024px){
@@ -23,6 +47,12 @@
     .hero {
         height: 50vh;
         max-height: 550px;
+        overflow: hidden;
+
+        #indxherobg {
+            top: -50%;
+            height: 150%;
+        }
 
         .wrap {
             width: 80%;
@@ -107,6 +137,8 @@
     }
 
     .aboutme {
+        padding: 3rem 0;
+
         .wrap {
             width: 80%;
             margin: 0 auto;
@@ -130,10 +162,32 @@
             grid-column: 2/3;
             background-color: rgba(30, 143, 255, 0.205);
             border-radius: .3rem;
+
+            padding: 1rem;
+
+            & li {
+                list-style: none;
+                margin-bottom: .4rem;
+
+                font-family: "Arial";
+                font-size: 1.1rem;
+                font-weight: 500;
+
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+
+                & img {
+                    height: 35px;
+                }
+            }
         }
     }
 
     .skillme {
+        background-color: #e2e2e2;
+        padding: 3rem 0;
+
         .wrap {
             width: 80%;
             margin: 0 auto;
@@ -152,7 +206,47 @@
             display: grid;
             gap: 1rem;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 250px;
+            
+
+            .skill {
+                text-align: center;
+
+                & img {
+                    width: 40%;
+                    margin-bottom: .4rem;
+                }
+
+                & h3 {
+                    font-family: Arial;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+
+    }
+
+    .projectme {
+        padding: 3rem 0;
+
+        .wrap {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .wrap .head {
+            color: rgb(0, 73, 116);
+            font-family: "Rubik";
+
+            & span {
+                color: dodgerblue;
+            }
+        }
+
+        .wrap .projs {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
         }
     }
 
