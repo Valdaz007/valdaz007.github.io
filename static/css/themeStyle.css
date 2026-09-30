@@ -112,19 +112,7 @@ header {
 main {
     width: clamp(250px, 95%, 800px);
     margin: 0 auto;
-    margin-top: 1rem;
     color: #1c1c1c;
-}
-
-main .aboutme {
-    padding: 2rem 0;
-
-    .sub_Header {
-        font-family: "Rubik";
-        text-align: left;
-        color: dodgerblue;
-        font-size: clamp(1.2rem, 3vw, 2rem);
-    }
 }
 
 main .sub_Text {

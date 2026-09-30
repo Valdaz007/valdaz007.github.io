@@ -29,7 +29,7 @@ class TempHeader extends HTMLElement {
 class TempFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <footer class="mt-4">
+        <footer>
             <div class="footer-wrap">
                 <div class="contact">
                     <h6>CONTACT</h6>
