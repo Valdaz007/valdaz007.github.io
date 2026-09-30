@@ -33,6 +33,10 @@
     }
 }
 
+main {
+    width: 100%;
+}
+
 :root {
     --diceWidth: 100px;
 }
@@ -155,7 +159,7 @@ h5 {
 }
 
 @media (min-width: 768px) {
-    .brief-info {
+    main .brief-info {
         width: auto;
     }
 }
@@ -163,5 +167,28 @@ h5 {
 @media (min-width: 1024px) {
     .brief-info {
         margin-top: 2rem;
+    }
+
+    .hero {
+        .heroWrap {
+            width: 80%;
+        }
+    }
+
+    main .brief-info {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    main h5 {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    main .gallery {
+        width: 80%;
+        margin: 0 auto;
+
+        justify-content: start;
     }
 }
