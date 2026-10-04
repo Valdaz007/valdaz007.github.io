@@ -107,20 +107,6 @@ header {
 }
 /* HEADER ENDS HERE *************************************************************************/
 
-/* MAIN *************************************************************************************/
-
-main {
-    width: clamp(250px, 95%, 800px);
-    margin: 0 auto;
-    color: #1c1c1c;
-}
-
-main .sub_Text {
-    text-align: center;
-    margin-top: 10px;
-    font-size: clamp(1rem, 2vw, 1.4rem);
-}
-/*** MAIN ENDS HERE   *************************************************************************/
 
 
 .bar {
@@ -201,17 +187,25 @@ footer {
 /* MEDIA QUERIES    *************************************************************************/
 @media (min-width: 426px) {
     .header-wrapper {
-        width: clamp(425px, 80%, 800px);
+        width: 95%;
+    }
+}
+
+@media (min-width: 600px) {
+    .header-wrapper {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header-wrapper {
+        width: 80%;
     }
 }
 
 @media(min-width: 1440px){
     .header-wrapper {
         width: 80%;
-    }
-
-    main .sub_Header {
-        font-size: 2.4rem;
     }
 }
 

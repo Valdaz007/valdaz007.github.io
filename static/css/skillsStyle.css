@@ -4,175 +4,90 @@ main {
 
 .hero {
     position: relative;
-    height: clamp(220px, 50vw, 300px);
-    margin-bottom: 2rem;
-    
-    z-index: 1;
+    height: 70vh;
+    max-height: 650px;
+    background-color: aliceblue;
 
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-
-        background-color: rgba(0, 0, 0, 0.55);
-        backdrop-filter: blur(2px);
-
-        z-index: 3;
-    }
-
-    .hero-wrap {
-        max-width: 800px;
+    .wrap {
         width: 95%;
         height: 100%;
         margin: 0 auto;
         display: flex;
         gap: 3rem;
         align-items: center;
-        justify-content: center;
     }
 
-    #vic {
-        position: relative;
-        height: 80%;
-        aspect-ratio: 1/1;
-        z-index: 4;
+    .wrap .content {
+        margin: 0;
 
-        background-color: tomato;
-        box-shadow: 0 0 10px black inset;
+        & h1 {
+            font-family: "Rubik";
+            font-size: 2.4rem;
+        }
 
-        border-radius: 10px;
-        overflow: hidden;
-
-        #vic-img {
-            position: absolute;
-            /* height: 230%; */
-            width: 100%;
+        & p {
+            font-family: "Rubik";
+            font-size: 1.2rem;
         }
     }
-
-    .sub_Header {
-        width: 50%;
-        margin: 0;
-        font-size: clamp(1.6rem, 4vw,  2.2rem);
-        font-weight: 600;
-        color: orange;
-        z-index: 6;
-        /* border: 1px solid red; */
-    }
-
-    #skills-bgHero {
-        position: absolute;
-        object-position: bottom;
-        object-fit: cover;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-    }
-}
-
-h5 {
-    color: rgba(255, 255, 255);
-    margin: 5px 10px 0px 10px;
-    font-size: x-larger;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.skills {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-}
-
-.skillset {
-    background-color:rgba(198, 122, 233, 0.295);
-    border: 5px solid transparent;
-}
-
-.skillset ul {
-    list-style-type: disc;
-}
-
-.skillset ul li {
-    margin-left: 40px;
-    margin-bottom: 3px;
-    text-align: left;
-    color: rgb(230, 230, 230);
-    font-size: 15px;
-}
-
-.devset {
-    background-color: chocolate;
-    padding: 0px;
-    text-align: center;
-}
-
-.devinfo {
-    background-color: rgba(255, 122, 27, 0.5);
-    border-radius: 5px;
-}
-
-.devSub {
-    text-align: left;
-    font-size: large;
-}
-
-.devinfo p {
-    text-align: left;
-    color: aliceblue;
-    padding: 0px;
-    font-size: 0.95em;
 }
 
 /*** MEDIA QUERIES *********************************************************/
 
-@media(min-width: 426px) {
-    .skills {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
+/* @media(min-width: 426px) {
+} */
 
-    .skillset:nth-child(3) {
-        grid-row-start: 2;
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-
-    .devset {
-        grid-row-start: 3;
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-}
-
-@media(min-width: 768px) {
-    .skills {
-        width: 90%;
-        margin: 0 auto;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .devset {
-        grid-row-start: 1;
-        grid-column-start: 3;
-    }
-}
+/* @media(min-width: 768px) {
+} */
 
 @media(min-width: 1024px){
     .hero {
-        height: 50vh;
+        max-height: 350px;
+        border: 1px solid red;
+
+        .wrap {
+            width: 80%;
+            height: 100%;
+        }
+
+        .wrap .content {
+            width: 50%;
+            border: 1px solid red;
+        }
     }
 
     .skills {
-        width: 80%;
-        border: 1px solid red;
+        padding: 3rem 0;
 
-        .skillset {
+        .wrap {
             width: 80%;
+            margin: 0 auto;
+            
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(3, 1fr);
+
+            .skill {
+                border: 2px solid rgba(30, 143, 255, 0.884);
+                padding: 1rem;
+                border-radius: .4rem;
+
+                .skillbd {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .4rem;
+
+                    & h5 {
+                        font-family: "Rubik";
+                        font-size: 1.2rem;
+                    }
+
+                    & p {
+                        font-family: "Rubik";
+                        font-size: 1rem;
+                    }
+                }
+            }
         }
     }
 }
