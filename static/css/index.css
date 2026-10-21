@@ -621,7 +621,7 @@
             display: grid;
             gap: 1rem;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            
+            margin-top: 1rem;
 
             .skill {
                 text-align: center;
@@ -661,7 +661,35 @@
         .wrap .projs {
             display: grid;
             gap: 1rem;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-top: 1rem;
+
+            .proj {
+                min-height: 55vh;
+                height: fit-content;
+                border: 1px solid red;
+                border-radius: 1rem;
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+                .proj-wrap {
+                    height: 100%;
+
+                    .hd-img {
+                        height: 200px;
+
+                        & img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .bd-cont {
+                        padding: .75rem;
+                        line-height: 1.4rem;
+                    }
+                }
+            }
         }
     }
 
@@ -672,6 +700,21 @@
         border: none;
         border-radius: 1rem;
     }
+}
+
+@media(min-width: 1200px){
+    .hero {
+        .wrap {
+            #hero-img {
+                text-align: right;
+
+                & img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+
 }
 
 @media(min-width: 1440px){
