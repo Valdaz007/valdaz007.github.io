@@ -665,18 +665,24 @@
             margin-top: 1rem;
 
             .proj {
-                min-height: 55vh;
+                background-color: #1c1c1c;
+                /* min-height: 55vh; */
                 height: fit-content;
-                border: 1px solid red;
                 border-radius: 1rem;
                 padding: 0;
                 margin: 0;
                 overflow: hidden;
+                box-shadow: 0 0 7px 2px #232323;
+
+                text-decoration: none;
+                color: #fff;
+
                 .proj-wrap {
                     height: 100%;
 
                     .hd-img {
                         height: 200px;
+                        box-shadow: 0 0 3px 1px #000;
 
                         & img {
                             width: 100%;
@@ -685,7 +691,7 @@
                     }
 
                     .bd-cont {
-                        padding: .75rem;
+                        padding: 1.2rem 1rem;
                         line-height: 1.4rem;
                     }
                 }
