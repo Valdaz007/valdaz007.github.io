@@ -45,17 +45,12 @@ class TempFooter extends HTMLElement {
                         <div class = "socials">
                             <div class="link">
                                 <a href="https://www.facebook.com/victorvolsavai/">
-                                    <img title="Facebook" class="link-img" src="./static/image/facebook.png">
-                                </a>
-                            </div>
-                            <div class="link">
-                                <a href="instagram.com">
-                                    <img title="Instagram" class="link-img" src="./static/image/instagram.png">
+                                    <img title="Facebook" class="link-img" src="./static/image/link-fb.png">
                                 </a>
                             </div>
                             <div class="link">
                                 <a href="https://www.linkedin.com/in/victorvolsavai">
-                                    <img title="Linked In" class="link-img" src="./static/image/linkedin.png">
+                                    <img title="Linked In" class="link-img" src="./static/image/link-in.png">
                                 </a>
                             </div>
                         </div>
@@ -64,7 +59,7 @@ class TempFooter extends HTMLElement {
                 </div>
             </div>
 
-            <p class="copyright">&copy 2025 ValdazMedia</p> 
+            <p class="copyright">&copy 2026 ValdazMedia</p> 
         </footer>
         `
     }

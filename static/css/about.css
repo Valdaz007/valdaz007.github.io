@@ -102,14 +102,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: right;
-
-    .contentTextWrap {
-        width: 100%;
-        padding: 1rem;
-        background-color: #33333361;
-        border-radius: 1rem;
-        z-index: 10;
-    }
 }
 
 @keyframes diceRotate {
@@ -123,32 +115,12 @@ h5 {
     text-align: left;
 }
 
-.imgMe {
-    float: left;
-    border-radius: 10px;
-    margin-right: 25px;
-}
-
 .gallery {
     width: 100%;
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
     gap: 10px;
-}
-
-.imgCenter {
-    max-width: 250px;
-    width: 48%;
-    aspect-ratio: 1/1;
-
-    position: relative;
-
-    .imgAboutMe {
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-    }
 }
 
 /* MEDIA QUERIES    *************************************************************************/
@@ -159,17 +131,13 @@ h5 {
 }
 
 @media (min-width: 768px) {
-    main .brief-info {
-        width: auto;
-    }
 }
 
 @media (min-width: 1024px) {
-    .brief-info {
-        margin-top: 2rem;
-    }
 
     .hero {
+        height: 350px;
+
         .heroWrap {
             width: 80%;
         }
@@ -190,5 +158,77 @@ h5 {
         margin: 0 auto;
 
         justify-content: start;
+    }
+}
+
+@media(min-width: 1440px){
+    .hero {
+        overflow: hidden;
+
+        & img {
+            height: 175%;
+            top: -3rem;
+        }
+    }
+
+    .brief-info {
+        height: fit-content;
+        padding: 2rem 0;
+        display: flex;
+
+        .imgMe {
+            width: 35%;
+        }
+
+        #aboutme {
+            font-family: 'Rubik';
+
+            & h5 {
+                width: auto;
+                margin-bottom: .6rem;
+                font-size: 2rem;
+                font-weight: 500;
+            }
+
+            & p {
+                margin-bottom: .5rem;
+                line-height: 1.6rem;
+            }
+
+            #mibio, #milinks, #micontact {
+                margin-top: 2rem;
+
+                & h6 {
+                    width: fit-content;
+                    margin-bottom: .6rem;
+                    background-color: rgb(43, 196, 43);
+                    padding: .5rem 1rem;
+                    border-radius: 2rem;
+
+                    /* color: darkcyan; */
+                    font-size: 1.2rem;
+                }
+
+                & ul {
+                    list-style: none;
+                    display: flex;
+                    gap: 1rem;
+
+                    & li {
+                        text-align: center;
+
+                        & h3 {
+                            padding: .5rem 0;
+                            font-size: 1rem;
+                            font-weight: 400;
+                        }
+                    }
+
+                    & li a img {
+                        border-radius: 1rem;
+                    }
+                }
+            }
+        }
     }
 }

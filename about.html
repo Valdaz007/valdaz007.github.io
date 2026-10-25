@@ -4,8 +4,11 @@
     <head>
         <meta charset = "utf-8">
         <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
         <link rel = "stylesheet" href = "./static/css/themeStyle.css">
-        <link rel = "stylesheet" href = "./static/css/aboutStyle.css">
+        <link rel = "stylesheet" href = "./static/css/about.css">
         <title>Valdaz007 - ABOUT</title>
     </head>
     <body>
@@ -14,65 +17,85 @@
         <!-- HERO SECTION -->
         <section class="hero">
             <div class="heroWrap">
-                <div class="diceWrap">
-                    <div class="dice">
-                        <div class="side front"></div>
-                        <div class="side back"></div>
-                        <div class="side right"></div>
-                        <div class="side left"></div>
-                        <div class="side top"></div>
-                        <div class="side bottom"></div>
-                    </div>
-                </div>
-                <div class="contentText">
+                <!-- <div class="contentText">
                     <div class="contentTextWrap">
                         <h2 class="sub_Header text-warning">Victor Volsavai <span style="font-size:medium;">AKA</span> Valdaz</h2>
                         <h5 class="sub_Text mb-4 text-warning">IT Technical Officer | Network Support Officer | Cloud R&D Officer</h5>
                     </div>
-                </div>
+                </div> -->
             </div>
-            <img src="./static/image/abstract-bg.jpg" alt="">
+
+            <img src="./static/image/about-hero.webp" alt="">
         </section>
 
         <!-- MAIN SECTION -->
         <main>
             <div class="brief-info">
-                <img class="imgMe mb-2" src="./static/image/pic01.jpg"/>
+                <img class="imgMe" src="./static/image/about-miimg.webp" alt="Full Body Image of Victor Volsavai"/>
             
-                <h5 class="text-info mt-2">ABOUT ME</h5>
-                <p>
-                    During my 2nd year at the UPNG I was fortunate to take a course called 
-                    <span class = "text-info">Introduction to Programming</span> where 
-                    I start developing a passion for coding. I could still rememeber the 
-                    feeling of writing my first <span class = "text-info">'Hello, World!'</span> 
-                    code in <span class = "text-info">C++</span> and printing it out to the console. 
-                    I still code in C++ but now do a lot of my coding in <span class = "text-info">Python</span> 
-                    which I enjoy very much. I also took an interest in Website Development 
-                    that led me to take a course on it though most of my learning was self thought
-                    I really enjoy building websites. This github page was my website hosted outside
-                    of my PC.
-                </p>
-                <p>
-                    I now have <span class="text-info">3+ Working Experience</span> as an 
-                    <span class="text-info">Core Network & Application Officer</span>; 
-                    I have developed skills in planning and organizing website projects, 
-                    research and development of products, and planning and setting up networks 
-                    for business enterprises and service providers. I have good understanding of cloud 
-                    solutions and developing cloud products.
-                </p>
-            </div>
-
-            <!-- GALLERY SECTION -->
-            <h5 class="text-info mt-4 mb-3">GALLERY</h5>
-            <div class="gallery">
-                <div class="imgCenter">
-                    <img class="imgAboutMe" src="./static/image/other01.avif" title = "Physics Lab">
-                </div>
-                <div class = "imgCenter">
-                    <img class="imgAboutMe" src="./static/image/other02.avif" title = "Work Station">
-                </div>
-                <div class="imgCenter">
-                    <img class="imgAboutMe" src="./static/image/wwdi-vsat-installation.avif" title = "Computer Science Lab">
+                <div id="aboutme">
+                    <h5>ABOUT ME</h5>
+                    <p>
+                        I am based in Port Moresby working for a fairly new locally
+                        owned Internet Service Provider (ISP) - <a href="https://nexttowntech.com.pg">Next Town Technology Ltd</a>
+                        and have been gethering experience for about 5+ years as a Core Network & Application Officer.
+                    </p>
+                    <p>
+                        <b>Core Network Engineer</b> - I plan and implement both company and clients network infrastructure
+                        as well as manage monitor and provide IT support to resolve network issues. I also plan and implement
+                        Gigabit Passive Optical Network (GPON), doing main fiber optics hauling, splicing and splitter installations.
+                    </p>
+                    <p>
+                        <b>Application Officer</b> - I design and build full stack websites, research alternate update to date solutions, 
+                        research and develop products and solutions, design company systems and processes, and record, manage and maintain company data.
+                    </p>
+                    <p>
+                        <b>Manage Operations</b> - compiling and reporting of daily tasks, assigning and supervising officers tasks, managing
+                        and maintaining clients information, and occasionally doing sales and marketing.
+                    </p>
+                    <div id="mibio">
+                        <h6>BIO:</h6>
+                        <p>
+                            Born and raised in the Capital of Papua New Guinea, I am the eldest of 5 brothers with mixed parentage from East Sepik
+                            and New Ireland provinces. My hobbies include researching and testing free open source solutions, building my homelab,
+                            and playing chess or any fun strategic games.
+                        </p>
+                    </div>
+                    
+                    <div id="milinks">
+                        <h6>LINKS:</h6>
+                        <ul>
+                            <li><a href="https://github.com/Valdaz007">
+                                <img src="./static/image/link-github64.png" alt="GitHub Icon" title="Github Account"></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/victorvolsavai">
+                                <img src="./static/image/link-in.png" alt="LinkIn Icon" title="LinkedIn Account"></a>
+                            </li>
+                            <li><a href="https://www.facebook.com/victorvolsavai/">
+                                <img src="./static/image/link-fb.png" alt="Facebook Icon" title="Facebook Account"></a>
+                            </li>
+                            <li><a href="https://www.chess.com/member/niuginichess">
+                                <img src="./static/image/link-chess.com64.png" alt="Link to chess.com account" title="Chess.com Account"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="micontact">
+                        <h6>CONTACT</h6>
+                        <ul>
+                            <li>
+                                <!-- <h3>EMAIL ME</h3> -->
+                                <a href="mailto:volsavaivictor@gmail.com">
+                                    <img src="./static/image/link-gmail.jfif" alt="GMail Icon" title="Send Me An Email.">
+                                </a>
+                            </li>
+                            <li>
+                                <!-- <h3>WHATSAPP ME</h3> -->
+                                <a href="https://wa.me/67578449084" target="_blank">
+                                    <img src="./static/image/link-whatsapp64.png" alt="WhatsApp Icon" title="Send Me Chat.">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </main>
@@ -81,9 +104,6 @@
         <temp-footer></temp-footer>
 
         <script src = "./static/js/tempMngr.js"></script>
-        <script src = "./static/js/jquery.js"></script>
-        <script src = "./static/jqueryui/jquery-ui.js"></script>
-        <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src = "./static/js/myJs.js"></script>
     </body>
 </html>
