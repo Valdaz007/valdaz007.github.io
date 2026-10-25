@@ -130,10 +130,7 @@ h5 {
     }
 }
 
-@media (min-width: 768px) {
-}
-
-@media (min-width: 1024px) {
+@media (min-width: 600px) {
 
     .hero {
         height: 350px;
@@ -143,21 +140,136 @@ h5 {
         }
     }
 
-    main .brief-info {
-        width: 80%;
+    .brief-info {
+        width: 90%;
         margin: 0 auto;
+        height: fit-content;
+        padding: 2rem 0;
+        display: flex;
+
+        .imgMe {
+            width: 30%;
+        }
+
+        #aboutme {
+            font-family: 'Rubik';
+
+            & h5 {
+                width: auto;
+                margin-bottom: .6rem;
+                font-size: 2rem;
+                font-weight: 500;
+            }
+
+            & p {
+                margin-bottom: .5rem;
+                line-height: 1.6rem;
+            }
+
+            #mibio, #milinks, #micontact {
+                margin-top: 2rem;
+
+                & h6 {
+                    width: fit-content;
+                    margin-bottom: .6rem;
+                    background-color: rgb(43, 196, 43);
+                    padding: .5rem 1rem;
+                    border-radius: 2rem;
+
+                    /* color: darkcyan; */
+                    font-size: 1.2rem;
+                }
+
+                & ul {
+                    list-style: none;
+                    display: flex;
+                    gap: 1rem;
+
+                    & li {
+                        text-align: center;
+
+                        & h3 {
+                            padding: .5rem 0;
+                            font-size: 1rem;
+                            font-weight: 400;
+                        }
+                    }
+
+                    & li a img {
+                        border-radius: 1rem;
+                    }
+                }
+            }
+
+            #milinks, #micontact {
+                display: none;
+            }
+        }
     }
+}
 
-    main h5 {
+@media (min-width: 1024px) {
+    .brief-info {
         width: 80%;
         margin: 0 auto;
-    }
+        height: fit-content;
+        padding: 2rem 0;
+        display: flex;
 
-    main .gallery {
-        width: 80%;
-        margin: 0 auto;
+        .imgMe {
+            width: 30%;
+        }
 
-        justify-content: start;
+        #aboutme {
+            font-family: 'Rubik';
+
+            & h5 {
+                width: auto;
+                margin-bottom: .6rem;
+                font-size: 2rem;
+                font-weight: 500;
+            }
+
+            & p {
+                margin-bottom: .5rem;
+                line-height: 1.6rem;
+            }
+
+            #mibio, #milinks, #micontact {
+                margin-top: 2rem;
+
+                & h6 {
+                    width: fit-content;
+                    margin-bottom: .6rem;
+                    background-color: rgb(43, 196, 43);
+                    padding: .5rem 1rem;
+                    border-radius: 2rem;
+
+                    /* color: darkcyan; */
+                    font-size: 1.2rem;
+                }
+
+                & ul {
+                    list-style: none;
+                    display: flex;
+                    gap: 1rem;
+
+                    & li {
+                        text-align: center;
+
+                        & h3 {
+                            padding: .5rem 0;
+                            font-size: 1rem;
+                            font-weight: 400;
+                        }
+                    }
+
+                    & li a img {
+                        border-radius: 1rem;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -228,6 +340,10 @@ h5 {
                         border-radius: 1rem;
                     }
                 }
+            }
+
+            #milinks, #micontact {
+                display: block;
             }
         }
     }
