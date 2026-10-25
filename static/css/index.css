@@ -642,7 +642,7 @@
     }
 
     .skillme {
-        background-color: #e2e2e2;
+        background-color: transparent;
         padding: 3rem 0;
 
         .wrap {
@@ -684,6 +684,7 @@
     }
 
     .projectme {
+        background-color: #e2e2e2;
         padding: 3rem 0;
 
         .wrap {
