@@ -1,6 +1,7 @@
 $(document).ready(function(){
     const primaryNav = document.querySelector(".primary-nav");
     const btnNav = document.querySelector(".btnNav-toggle");
+    const btnProj = document.querySelector("#btnProj")
 
     btnNav.addEventListener('click', () => {
         const visibility = primaryNav.getAttribute('data-visible');
@@ -14,9 +15,7 @@ $(document).ready(function(){
         }
     });
 
-    $(".panels").accordion(
-        {active: 2}, 
-        {collapsible: true},
-        {heightStyle: "content"}
-    );
+    btnProj.addEventListener('click', ()=>{
+        alert('Projects Page is still under Development!')
+    })
 });
