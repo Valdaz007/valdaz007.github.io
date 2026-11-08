@@ -1,13 +1,15 @@
 .hero {
-    height: clamp(220px, 50vw, 300px);
+    height: 70vh;
+    max-height: 450px;
     position: relative;
     z-index: -1;
+    overflow: hidden;
     
     & img {
         position: absolute;
         top: 0;
         height: 100%;
-        width: 100%;
+        width: 110%;
         z-index: -1;
     }
 }
@@ -100,9 +102,6 @@ main {
 }
 
 @media (min-width: 425px) {
-    .hero {
-        height: 350px;
-    }
 
     .brief-info {
         #aboutme {
@@ -162,7 +161,7 @@ main {
 @media (min-width: 600px) {
 
     .hero {
-        height: 350px;
+        max-height: 450px;
 
         .heroWrap {
             width: 80%;
@@ -348,9 +347,6 @@ main {
 }
 
 @media (min-width: 1200px) {
-    .hero {
-        height: 650px;
-    }
 
     .brief-info {
         #aboutme {
@@ -370,6 +366,7 @@ main {
 
 @media(min-width: 1440px){
     .hero {
+        max-height: 650px;
         overflow: hidden;
 
         & img {
