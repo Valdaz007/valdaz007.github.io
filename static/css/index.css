@@ -774,6 +774,7 @@
                     .bd-cont {
                         padding: 1.2rem 1rem;
                         line-height: 1.4rem;
+                        font-size: 1rem;
                     }
                 }
 
@@ -797,12 +798,21 @@
 
 @media(min-width: 1200px){
     .hero {
+        max-height: 650px;
+        display: flex;
+        align-items: end;
+
         .wrap {
+            height: 90%;
+
             #hero-img {
                 text-align: right;
+                height: 100%;
+                overflow: hidden;
 
                 & img {
-                    width: 80%;
+                    width: auto;
+                    height: 100%;
                 }
             }
         }
