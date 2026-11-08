@@ -7,8 +7,8 @@
 
 .hero {
     background-color: rgb(49, 25, 0);
-    height: 50vh;
-    max-height: 650px;
+    height: 100vh;
+    max-height: 450px;
 
     display: flex;
     align-items: end;
@@ -804,9 +804,6 @@
 
 @media(min-width: 1200px){
     .hero {
-        max-height: 650px;
-        display: flex;
-        align-items: end;
 
         .wrap {
             height: 90%;
@@ -828,6 +825,8 @@
 
 @media(min-width: 1440px){
     .hero {
+        max-height: 650px;
+
         .wrap {
             #hero-img {
                 display: flex;
