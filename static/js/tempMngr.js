@@ -17,7 +17,6 @@ class TempHeader extends HTMLElement {
                         <ul id="primary-nav" data-visible="false" class="primary-nav">
                             <li><a href="./index.html">HOME</a></li>
                             <li><a href="./skills.html">SKILLS</a></li>
-                            <li><a href="./project.html">PROJECT</a></li>
                             <li><a href="./about.html">ABOUT</a></li>
                         </ul>
                     </nav>
