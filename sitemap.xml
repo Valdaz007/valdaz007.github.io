@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+       <loc>https://valdaz007.github.io/</loc>
+       <lastmod>2026-11-26T02:37:38+00:00</lastmod>
+       <priority>1.0000</priority>
+  </url>
+  <url>
+       <loc>https://valdaz007.github.io/static/docs/CV-Victor_VOLSAVAI-Core_Network_Application_Officer-26-10-26.pdf</loc>
+       <lastmod>2026-11-26T02:37:38+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://valdaz007.github.io/index.html</loc>
+       <lastmod>2026-11-26T02:37:38+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://valdaz007.github.io/skills.html</loc>
+       <lastmod>2026-11-26T02:37:38+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://valdaz007.github.io/about.html</loc>
+       <lastmod>2026-11-26T02:37:38+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+</urlset>
